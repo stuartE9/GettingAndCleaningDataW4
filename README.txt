@@ -1,7 +1,7 @@
-﻿README
+README
 
 This is a solution to the Coursera 'Getting and Cleaning Data' course Week 4 assignment.
-This script  will perform the required analyses on the provided data once it has been unzipped and read into R
+This script  will perform the required analyses on the provided data once it has been unzipped 
 
 That part of the process can be accomplished by :
 
@@ -15,21 +15,6 @@ That part of the process can be accomplished by :
 
 	unzip(zip,exdir="zipdir")
 
-## read files into dataframes - use similar df names to original files - user should specify path to /UCI HAR........
-	X_train <- read.table("~/R/spec_Data/week4_data/week4project/zipdir/UCI HAR Dataset/train/X_train.txt", 	quote="\"")
-
-	X_test <- read.table("~/R/spec_Data/week4_data/week4project/zipdir/UCI HAR Dataset/test/X_test.txt", 	quote="\"")
-
-	y_test <- read.table("~/R/spec_Data/week4_data/week4project/zipdir/UCI HAR Dataset/test/y_test.txt", 	quote="\"")
-
-	subject_test <- read.table("~/R/spec_Data/week4_data/week4project/zipdir/UCI HAR 	Dataset/test/subject_test.txt", quote="\"")
-
-	y_train <- read.table("~/R/spec_Data/week4_data/week4project/zipdir/UCI HAR Dataset/train/y_train.txt", 	quote="\"")
-
-	subject_train <- read.table("~/R/spec_Data/week4_data/week4project/zipdir/UCI HAR 	Dataset/train/subject_train.txt", quote="\"")
-
-	activity_labels <- read.table("~/R/spec_Data/week4_data/week4project/zipdir/UCI HAR 	Dataset/activity_labels.txt", quote="\"")
-
-	features <- read.table("~/R/spec_Data/week4_data/week4project/zipdir/UCI HAR Dataset/features.txt", 	quote="\"")
+It is necessary to define the path to the user's working directory at line 7
 
 Function will execute (without parameters) and create a csv file 'tidyData.csv' in the working directory
